@@ -1,4 +1,4 @@
-# Fitbit_D3
+# Fitbit_D3 - https://fitbit-d3.vercel.app/
 
 A web application built with Next.js and D3.js for visualizing Fitbit data. This project allows users to explore Fitbit data through various types of charts and visualizations.
 
