@@ -1,40 +1,53 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Fitbit_D3
 
-## Getting Started
+A web application built with Next.js and D3.js for visualizing Fitbit data. This project allows users to explore Fitbit data through various types of charts and visualizations.
 
-First, run the development server:
+## Tech Stack
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Next.js:** React framework for server-side rendering and static site generation.
+- **D3.js:** JavaScript library for creating dynamic, interactive data visualizations.
+- **Tailwind CSS:** Utility-first CSS framework for styling.
+- **Vercel:** Platform for deploying and hosting the application.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
+- **Interactive Charts:** Display data using various chart types including:
+  - **Line Charts:** - Average Active Time by Weekdays
+  - **Bar Charts:**  - Average Steps by Time of Day
+  - **Pie Charts:**  - Activity Status
+  - **Scatterplots:** - Total Steps vs. Calories
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Dataset Summary
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+The dataset used in this project includes Fitbit activity data with the following parameters:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- **Id:** Unique identifier for the user
+- **ActivityDate:** Date of the recorded activity
+- **TotalSteps:** Total number of steps taken
+- **TotalDistance:** Total distance covered (in miles)
+- **TrackerDistance:** Distance covered as recorded by the tracker (in miles)
+- **LoggedActivitiesDistance:** Distance covered through logged activities (in miles)
+- **VeryActiveDistance:** Distance covered during very active periods (in miles)
+- **ModeratelyActiveDistance:** Distance covered during moderately active periods (in miles)
+- **LightActiveDistance:** Distance covered during light active periods (in miles)
+- **SedentaryActiveDistance:** Distance covered during sedentary periods (in miles)
+- **VeryActiveMinutes:** Number of minutes spent in very active periods
+- **FairlyActiveMinutes:** Number of minutes spent in fairly active periods
+- **LightlyActiveMinutes:** Number of minutes spent in lightly active periods
+- **SedentaryMinutes:** Number of minutes spent in sedentary periods
+- **Calories:** Total calories burned
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Sample Data
 
-## Learn More
+Here is a sample of the data:
 
-To learn more about Next.js, take a look at the following resources:
+| Id        | ActivityDate | TotalSteps | TotalDistance | TrackerDistance | LoggedActivitiesDistance | VeryActiveDistance | ModeratelyActiveDistance | LightActiveDistance | SedentaryActiveDistance | VeryActiveMinutes | FairlyActiveMinutes | LightlyActiveMinutes | SedentaryMinutes | Calories |
+|-----------|--------------|------------|---------------|-----------------|--------------------------|---------------------|--------------------------|---------------------|-------------------------|-------------------|---------------------|-----------------------|-------------------|----------|
+| 1503960366 | 3/25/2016     | 11004      | 7.11          | 7.11            | 0                        | 2.57                | 0.46                     | 4.07                | 0                       | 33                | 12                  | 205                   | 804               | 1819     |
+| 1503960366 | 3/26/2016     | 17609      | 11.55         | 11.55           | 0                        | 6.92                | 0.73                     | 3.91                | 0                       | 89                | 17                  | 274                   | 588               | 2154     |
+| 1503960366 | 3/27/2016     | 12736      | 8.53          | 8.53            | 0                        | 4.66                | 0.16                     | 3.71                | 0                       | 56                | 5                   | 268                   | 605               | 1944     |
+| 1503960366 | 3/28/2016     | 13231      | 8.93          | 8.93            | 0                        | 3.19                | 0.79                     | 4.95                | 0                       | 39                | 20                  | 224                   | 1080              | 1932     |
+| 1503960366 | 3/29/2016     | 12041      | 7.85          | 7.85            | 0                        | 2.16                | 1.09                     | 4.61                | 0                       | 28                | 28                  | 243                   | 763               | 1886     |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+You can download the dataset from [Kaggle](https://www.kaggle.com/datasets/singhakash/fitbit-dataset).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
